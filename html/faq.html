@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dessert House</title>
+<link rel="stylesheet" href="../css/index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="../The Dessert house (2) (3)/Group 8.png" alt="logo" class="logo">
+    <span class="brand">The Dessert House</span>
+  </div>
+
+  <nav>
+    <a href="about.html">About Us</a>
+
+    <div class="dropdown">
+      <a class="dropdown-btn" onclick="toggleDropdown()">Desserts</a>
+      <div class="dropdown-content" id="dropdownMenu">
+        <a href="alldessert.html">All Desserts</a>
+        <a href="pastry.html">Pastry</a>
+        <a href="brownies.html">Brownies</a>
+        <a href="tart.html">Tart</a>
+        <a href="teacake.html">Tea Cake</a>
+        <a href="cupcake.html">Cup Cake</a>
+        <a href="jarcake.html">Jar Cake</a>
+        <a href="combo.html">Combos</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <span class="search-icon">🔍</span>
+    </div>
+    <button class="login-btn">Log In / Sign Up</button>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<h2 style="color: brown;">Frequently Asked Questions (FAQ)</h2>
+
+<div class="faq-container">
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      Who is the owner of The Dessert House?
+    </div>
+    <div class="faq-answer">
+      Iswarya Balamurugan is the Founder and Creative Director of The Dessert House,
+      established in 2024. Today, it is professionally managed in India.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      Are the brownies eggless?
+    </div>
+    <div class="faq-answer">
+      Yes, we offer eggless variants for most of our cakes, pastries, and brownies.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      How can I order?
+    </div>
+    <div class="faq-answer">
+      You can:
+        <ul>
+            <li>Order directly from our website. <a href="https://www.thedesserthouse.com">www.thedesserthouse.com</a> and click Order Online</li>
+            <li>Order via Zomato or Swiggy</li>
+            <li>For custom, bulk or corporate orders write to us at Click Here or Call us at +91 9876543210</li>
+        </ul>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      How long do the brownies last?
+    </div>
+    <div class="faq-answer">
+      Our brownies stay fresh for 4 days if stored in a cool, dry place at ambient temperature.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      How should I store your products?
+    </div>
+    <div class="faq-answer">
+      a.All products are baked/prepared fresh daily without presevatives.<br>
+      b.Shelf life is mentioned on product descriptions or labels(for packaged goods like breads, cookies, crackers).
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      Can I microwave or heat the products?
+    </div>
+    <div class="faq-answer">
+      a.Breads: Should not be microwaved.<br>
+      b.Savouries: Can be grilled or oven-heated.<br>
+      c.Cakes and Brownes: Best enjoyed at room temperature.<br>
+      d.If refrigerated, remove 15-20 minutes before eating.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      Do you offer sugar-free, vegan, or gluten-free products?
+    </div>
+    <div class="faq-answer">
+     Not on our regular menu.
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <div class="faq-question">
+      <div class="icon">+</div>
+      Does your website also deliver on Sundays and public holidays?
+    </div>
+    <div class="faq-answer">
+     The Dessert House works on all sundays and holidays except under uncontrollable situations like bad weather or civil disorder like bandhs.
+    </div>
+  </div>
+
+</div>
+
+<script>
+document.querySelectorAll('.faq-item').forEach(item => {
+  item.addEventListener('click', () => {
+    const icon = item.querySelector('.icon');
+    item.classList.toggle('active');
+    icon.textContent = item.classList.contains('active') ? '−' : '+';
+  });
+});
+</script>
+
+<footer class="footer">
+  <h2 class="footer-title">Quick links</h2>
+
+  <div class="footer-content">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="../The Dessert house (2) (3)/Group 8.png" alt="The Dessert House Logo">
+      <h3>The Dessert House</h3>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="alldessert.html">Desserts</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blogs</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Policies -->
+    <div class="footer-links">
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">Privacy Policy</a>
+      <a href="teams.html">Terms and Conditions</a>
+      <a href="refund.html">Refund Policy</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <p><i class="fa-solid fa-phone"></i> +91 987 654 3210</p>
+      <p><i class="fa-solid fa-envelope"></i> Contact@thedesserthouse.in</p>
+
+      <div class="social-icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    2024@thedesserthousein
+  </div>
+</footer>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
+<script>
+function toggleDropdown(){
+  document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+/* Close dropdown when clicking outside */
+window.onclick = function(event){
+  if(!event.target.matches('.dropdown-btn')){
+    let dropdown = document.getElementById("dropdownMenu");
+    if(dropdown.classList.contains('show')){
+      dropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+</body>
+</html>

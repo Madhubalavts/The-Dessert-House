@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Dessert House</title>
+<link rel="stylesheet" href="../css/index.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-left">
+    <img src="../The Dessert house (2) (3)/Group 8.png" alt="logo" class="logo">
+    <span class="brand">The Dessert House</span>
+  </div>
+
+  <nav>
+    <a href="about.html">About Us</a>
+
+    <div class="dropdown">
+      <a class="dropdown-btn" onclick="toggleDropdown()">Desserts</a>
+      <div class="dropdown-content" id="dropdownMenu">
+        <a href="alldessert.html">All Desserts</a>
+        <a href="pastry.html">Pastry</a>
+        <a href="brownies.html">Brownies</a>
+        <a href="tart.html">Tart</a>
+        <a href="teacake.html">Tea Cake</a>
+        <a href="cupcake.html">Cup Cake</a>
+        <a href="jarcake.html">Jar Cake</a>
+        <a href="combo.html">Combos</a>
+      </div>
+    </div>
+
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="nav-right">
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <span class="search-icon">🔍</span>
+    </div>
+    <button class="login-btn">Log In / Sign Up</button>
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<div class="hero">
+</div>
+
+<section class="products-section">
+  <h2 class="section-title">Our Products</h2>
+
+  <div class="products-grid">
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Component 2.png" alt="Pastries">
+      <h3>Pastries</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA (2).png" alt="Brownies">
+      <h3>Brownies</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1.png" alt="Jar Cakes">
+      <h3>Jar Cakes</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1 (3).png" alt="Tea Cakes">
+      <h3>Tea Cakes</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Component 26.png" alt="Tarts">
+      <h3>Tarts</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Component 20.png" alt="Cup Cakes">
+      <h3>Cup Cakes</h3>
+    </div>
+
+  </div>
+</section>
+
+<section class="testimonial-section">
+  <h2 class="testimonial-title">Testimonials</h2>
+
+  <div class="testimonial-box">
+    <p id="testimonial-text">
+      The Dessert House is an outlet which will always top our priority list.
+      Scrumptious warm brownies that melt in your mouth leaving you a heavenly sensation.
+    </p>
+
+    <h4 id="testimonial-author">Anmol Gaba, Chennai</h4>
+
+    <div class="wave"></div>
+  </div>
+</section>
+
+<section class="products-section">
+  <h2 class="section-title">Best Seller Combos</h2>
+
+  <div class="products-grid">
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Component 32.png" alt="Pastries">
+      <h3>Set of Six Assorted Brownies</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/Component 36.png" alt="Brownies">
+      <h3>Set of Six Assorted Pastries</h3>
+    </div>
+
+    <div class="product-card">
+      <img src="../The Dessert house (2) (3)/red-velvet-single-jar-cake-jar1288redv-AAA 1 (4).png" alt="Jar Cakes">
+      <h3>Set of Six Assorted Pastries</h3>
+    </div>
+
+  </div>
+</section>
+
+<footer class="footer">
+  <h2 class="footer-title">Quick links</h2>
+
+  <div class="footer-content">
+
+    <!-- Brand -->
+    <div class="footer-brand">
+      <img src="../The Dessert house (2) (3)/Group 8.png" alt="The Dessert House Logo">
+      <h3>The Dessert House</h3>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Links -->
+    <div class="footer-links">
+      <a href="about.html">About Us</a>
+      <a href="alldessert.html">Desserts</a>
+      <a href="contact.html">Contact</a>
+      <a href="blog.html">Blogs</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Policies -->
+    <div class="footer-links">
+      <a href="faq.html">FAQ</a>
+      <a href="policy.html">Privacy Policy</a>
+      <a href="teams.html">Terms and Conditions</a>
+      <a href="refund.html">Refund Policy</a>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- Contact -->
+    <div class="footer-contact">
+      <p><i class="fa-solid fa-phone"></i> +91 987 654 3210</p>
+      <p><i class="fa-solid fa-envelope"></i> Contact@thedesserthouse.in</p>
+
+      <div class="social-icons">
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    2024@thedesserthousein
+  </div>
+</footer>
+
+<section class="hero1">
+  <div class="hero1-content">
+    <button class="hero1-btn"><a href="order.html">Order Online</a></button>
+  </div>
+</section>
+
+<script>
+function toggleMenu(){
+  document.getElementById("navMenu").classList.toggle("show");
+}
+</script>
+
+<script>
+function toggleDropdown(){
+  document.getElementById("dropdownMenu").classList.toggle("show");
+}
+
+/* Close dropdown when clicking outside */
+window.onclick = function(event){
+  if(!event.target.matches('.dropdown-btn')){
+    let dropdown = document.getElementById("dropdownMenu");
+    if(dropdown.classList.contains('show')){
+      dropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<script>
+  const testimonials = [
+  {
+    text: "The Dessert House is an outlet which will always top our priority list. Scrumptious warm brownies that melt in your mouth leaving you a heavenly sensation.",
+    author: "Anmol Gaba, Chennai"
+  },
+  {
+    text: "Always a delight coming here for pastries. This The Dessert House outlet may not be very spacious but their pastries are lip smacking good. Loved hazelnut pastry among the ones i tried. Value for money and a must visit place!",
+    author: "Saurabh Mehra, Madurai"
+  },
+  {
+    text: "I love all The Dessert House products but the chocolate overload brownie has been my all-time favourite and truly justifies its name with its rich chocolate goodyness. The Dessert House is truly one of our favourite places!",
+    author: "Meenakshi Verma, Pudukottai"
+  }
+];
+
+let index = 0;
+
+setInterval(() => {
+  index = (index + 1) % testimonials.length;
+  document.getElementById("testimonial-text").innerText = testimonials[index].text;
+  document.getElementById("testimonial-author").innerText = testimonials[index].author;
+}, 2000);
+
+</script>
+</body>
+</html>
